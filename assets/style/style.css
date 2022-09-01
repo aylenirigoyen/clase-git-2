@@ -24,21 +24,37 @@ body {
     background-color: black;
 
 }
+.btn{
+    background-color: #C1A996;
+}
 
-nav ul {
-    display: flex;
-    justify-content: flex-start;
-    list-style: none;
-    margin: 0.6rem;
+
+
+nav div button{
+    background-color:black;
+}
+
+nav a {
     font-family: 'Julius Sans One', sans-serif;
     color: #C1A996;
 
 }
 
-nav ul li a {
+nav a {
+    font-family: 'Julius Sans One', sans-serif;
     color: #C1A996;
-    margin: 0.6rem;
-    text-decoration: none
+}
+nav h5{
+    font-family: 'Julius Sans One', sans-serif;
+    color: #C1A996;
+
+}
+
+nav a ul li button {
+    font-family: 'Julius Sans One', sans-serif;
+    color: #C1A996;
+
+
 }
 
 /*index*/
@@ -66,11 +82,11 @@ nav ul li a {
 
 .body {
     display: grid;
-    grid-template-areas: "home"
-                         "productos"
-                          "cuenta"
-                          "nosotros"
-                          "contactanos"
+    height: 100vh;
+    grid-template-columns: 4fr 4fr 4fr;
+    grid-template-rows: 1fr 10fr 1fr;
+
+    grid-template-areas: 
                         "portada"
                          "coleccion"
                          "anillo1"
@@ -84,25 +100,6 @@ nav ul li a {
 
 }
 
-.home{
-    grid-area: home;
-}
-
-.productos{
-    grid-area: productos;
-}
-
-.cuenta{
-    grid-area: cuenta;
-}
-
-.nosotros{
-    grid-area: nosotros;
-}
-
-.contactanos{
-    grid-area: contactanos;
-}
 
 
 
@@ -324,7 +321,8 @@ nav ul li a {
                              "imagen4"
                              "imagen5"
                              "imagen6";
-                             justify-content: center;
+
+     justify-content: center;
     
 
 }
@@ -424,12 +422,12 @@ nav ul li a {
 
     .body {
         grid-template-areas: 
-                             "portada "
-                             "coleccion "
+                             "portada portada portada"
+                             "coleccion coleccion coleccion"
                              "anillos1"
                              "aros2"
                              "collar3"
-                             "shop ";
+                             "shop shop shop";
     }
 
 }
@@ -438,10 +436,10 @@ nav ul li a {
 
     .body {
         grid-template-areas: 
-                             "portada "
-                             "coleccion "
+                             "portada portada portada "
+                             "coleccion coleccion coleccion"
                              "anillos1 aros2 collar3"
-                             "shop ";
+                             "shop shop shop";
 
 
     }
@@ -453,10 +451,10 @@ nav ul li a {
 
     .body {
         grid-template-areas:
-                             "portada "
-                             "coleccion "
+                             "portada portada portada "
+                             "coleccion coleccion coleccion "
                              "anillos1 aros2 collar3"
-                             "shop ";
+                             "shop shop shop ";
 
         
 

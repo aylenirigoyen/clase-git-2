@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="../assets/style/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,16 +15,49 @@
 </head>
 
 <body>
-    <h1 id="tituloPrincipal">FIORE</h1>
-    <nav>
-        <ul >
-            <li class="home mainProductos "><a href="../index.html">HOME</a></li>
-            <li class="productos mainProductos "><a href="./productos.html">PRODUCTOS</a></li>
-            <li class="cuenta  mainProductos"><a href="./cuenta.html">CUENTA</a></li>
-            <li class="nosotros  mainProductos "><a href="./nosotros.html">NOSOTROS</a></li>
-            <li class="contactanos  mainProductos"><a href="./contactanos.html">CONTACTANOS</a></li>
-        </ul>
+    <nav class="navbar navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">FIORE</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+                aria-labelledby="offcanvasDarkNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">MENU</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">PRODUCTOS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/cuenta.html">CUENTA</a>           
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/nosotros.html">NOSOTROS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/contactanos.html">CONTACTANOS</a>
+                        </li>          
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" >
+                        <button class="btn btn-success" type="submit">BUSCADOR</button>
+                    </form>
+                </div>
+            </div>
+        </div>
     </nav>
+    <h1 id="tituloPrincipal">FIORE</h1>
+
+    <h2 id="subTitulo">12 cuotas sin interes!!</h2>
 
 
     <main class="mainProductos">
@@ -78,6 +113,9 @@
         <img src="../assets/img/corazon.png" alt="corazon">
     </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
 
 </body>
 
