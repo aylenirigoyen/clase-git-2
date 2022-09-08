@@ -4,41 +4,28 @@
   grid-template-areas: "imagen1" "imagen2" "imagen3" "imagen4" "imagen5" "imagen6";
   justify-content: center; }
 
-.imagen1 {
-  grid-area: imagen1;
+.imagen, .imagen1, .imagen2, .imagen3, .imagen4, .imagen5, .imagen6 {
   margin-right: 2rem;
   margin-bottom: 2rem;
   margin-top: 2rem; }
+
+.imagen1 {
+  grid-area: imagen1; }
 
 .imagen2 {
-  grid-area: imagen2;
-  margin-right: 2rem;
-  margin-bottom: 2rem;
-  margin-top: 2rem; }
+  grid-area: imagen2; }
 
 .imagen3 {
-  grid-area: imagen3;
-  margin-right: 2rem;
-  margin-bottom: 2rem;
-  margin-top: 2rem; }
+  grid-area: imagen3; }
 
 .imagen4 {
-  grid-area: imagen4;
-  margin-right: 2rem;
-  margin-bottom: 2rem;
-  margin-top: 2rem; }
+  grid-area: imagen4; }
 
 .imagen5 {
-  grid-area: imagen5;
-  margin-right: 2rem;
-  margin-bottom: 2rem;
-  margin-top: 2rem; }
+  grid-area: imagen5; }
 
 .imagen6 {
-  grid-area: imagen6;
-  margin-right: 2rem;
-  margin-bottom: 2rem;
-  margin-top: 2rem; }
+  grid-area: imagen6; }
 
 .body {
   display: grid;
@@ -48,6 +35,11 @@
   grid-template-areas: "portada" "coleccion" "anillo1" "aros2" "collar3" "shop";
   justify-content: center; }
 
+.body-index, .anillo1, .aros2, .collar3 {
+  margin-right: 1rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem; }
+
 .portada {
   grid-area: portada;
   width: 100%; }
@@ -56,26 +48,24 @@
   grid-area: coleccion; }
 
 .anillo1 {
-  grid-area: anillo1;
-  margin-right: 1rem;
-  margin-bottom: 2rem;
-  margin-top: 2rem; }
+  grid-area: anillo1; }
 
 .aros2 {
-  grid-area: aros2;
-  margin-right: 1rem;
-  margin-bottom: 2rem;
-  margin-top: 2rem; }
+  grid-area: aros2; }
 
 .collar3 {
-  grid-area: collar3;
-  margin-right: 1rem;
-  margin-bottom: 2rem;
-  margin-top: 2rem; }
+  grid-area: collar3; }
 
 .shop {
   grid-area: shop;
   width: 100%; }
+
+.texto {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 3rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem; }
 
 @media screen and (min-width: 400px) {
   .mainProductos {
@@ -218,15 +208,12 @@ nav {
   margin-top: 2rem;
   margin-bottom: 2rem; }
 
-.cardDescripcion {
+.card, .cardDescripcion, .cardPrecio {
   font-family: 'Julius Sans One', sans-serif;
   color: #1a1612;
   font-size: 1rem; }
 
 .cardPrecio {
-  font-family: 'Julius Sans One', sans-serif;
-  color: #1a1612;
-  font-size: 1rem;
   justify-content: center; }
 
 /*nosotros*/
@@ -272,3 +259,6 @@ nav {
     transform: rotate(0); }
   to {
     transform: rotate(360deg); } }
+
+#carouselExampleControls {
+  width: 70%; }
