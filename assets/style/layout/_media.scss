@@ -1,4 +1,3 @@
-
 @media screen and (min-width:400px) {
 
     .mainProductos {
@@ -12,6 +11,7 @@
 
     }
 
+
 }
 
 
@@ -24,6 +24,10 @@
             "imagen3 imagen4"
             "imagen5 imagen6";
 
+    }
+
+    body {
+        font-size: 14px;
     }
 
 }
@@ -41,46 +45,103 @@
 
 /*media index*/
 
-@media screen and (min-width:400x) {
+@media screen and (max-width:576px) {
 
-    .body {
+
+
+    .gridConteiner {
+
+        grid-template-rows: repeat(6, auto);
+        grid-template-columns: 1fr;
         grid-template-areas:
-            "portada portada portada"
-            "coleccion coleccion coleccion"
-            "anillos1"
-            "aros2"
-            "collar3"
-            "shop shop shop";
-    }
-
-}
-
-@media screen and (min-width:768px) {
-
-    .body {
-        grid-template-areas:
-            "portada portada portada "
-            "coleccion coleccion coleccion"
-            "anillos1 aros2 collar3"
-            "shop shop shop";
-
-
-    }
-
-}
-
-
-@media screen and (min-width:992px) {
-    .body {
-        grid-template-areas:
-            "portada portada portada "
-            "coleccion coleccion coleccion "
-            "anillos1 aros2 collar3"
-            "shop shop shop ";
-
-
-
+            "item1 "
+            "item2 "
+            "item3 "
+            "item4 "
+            "item5 "
+            "item6 ";
+         
+           
+            
     }
 
 
+
 }
+
+@media screen and (max-width: 768px) {
+
+    
+
+
+
+
+}
+
+
+@media screen and (max-width: 1200px) {
+    
+
+    body {
+        font-size: 14px;
+    }
+
+
+
+}
+
+/*media nosotros*/
+
+@media screen and (max-width:576px) {
+
+    .gridNosotros {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, auto);
+        grid-template-areas:
+            "carrusel"
+            "text1"
+            "text2";
+        justify-content: center;
+    }
+
+    form{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .gridNosotros {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, auto);
+        grid-template-areas:
+            "carrusel carrusel"
+            "text1 text2";
+        justify-content: center;
+        margin: auto;
+
+
+    }
+
+
+
+
+}
+
+
+@media screen and (max-width:1200px) {
+    .gridNosotros {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, auto);
+        grid-template-areas:
+            "carrusel carrusel"
+            "text1 text2";
+        justify-content: center;
+        margin: auto;
+    }
+}
+
+

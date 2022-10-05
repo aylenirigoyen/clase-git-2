@@ -20,7 +20,7 @@
 <body>
     <nav class="navbar navbar-dark bg-dark fixed-top">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">FIORE</a>
+            <a class="navbar-brand" href="../index.html">FIORE</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
                 data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
                 <span class="navbar-toggler-icon"></span>
@@ -62,36 +62,36 @@
 
     <h2 id="subTitulo">12 cuotas sin interes!!</h2>
 
-    <main>
-        <form class="formulario">
-            <fieldset>
-                <div class="contactanos">
-                    <legend id="tituloContactanos">CONTACTANOS</legend>
 
-                    <div class="formularioDiv">
-                        <label class="label" for="nombre">Nombre y apellido</label>
-                        <input class="input" type="text" name="nombre">
-                    </div>
+    <form>
+        <fieldset>
+            <div>
+                <legend>CONTACTANOS</legend>
 
-                    <div class="formularioDiv">
-                        <label class="label" for="mail">Correo electronico</label>
-                        <input class="input" type="email" name="mail">
-                    </div>
-
-                    <div class="formularioDiv">
-                        <label class="label" for="mensaje">Tu mensaje</label>
-                        <input class="input" type="text" name="mensaje">
-                    </div>
-
-                    <div class="formularioDiv">
-                        <input class="formularioBotones" type="submit" value="Enviar">
-                        <input class="formularioBotones" type="reset" value="Borrar todo">
-                    </div>
+                <div>
+                    <label for="nombre">Nombre y apellido</label>
+                    <input type="text" name="nombre">
                 </div>
 
-            </fieldset>
-        </form>
-    </main>
+                <div>
+                    <label for="mail">Correo electronico</label>
+                    <input type="email" name="mail">
+                </div>
+
+                <div>
+                    <label for="mensaje">Tu mensaje</label>
+                    <textarea name="mensaje"></textarea>
+                </div>
+
+                <div>
+                    <input id="boton" type="submit" value="Enviar">
+
+                </div>
+            </div>
+
+        </fieldset>
+    </form>
+
 
     <footer>
         <h1 id="suscribete">SUSCRIBITE A NUESTRO NEWSLETTER</h1>

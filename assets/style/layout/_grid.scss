@@ -1,4 +1,4 @@
-/*main productos*/
+/*productos*/
 
 .mainProductos {
     display: grid;
@@ -17,10 +17,10 @@
 }
 
 
-.imagen{
-    margin-right: 2rem;
-    margin-bottom: 2rem;
-    margin-top: 2rem;
+.imagen {
+    margin-right: 2em;
+    margin-bottom: 2em;
+    margin-top: 2em;
 
 }
 
@@ -28,102 +28,166 @@
     grid-area: imagen1;
     @extend .imagen;
 
-    
+
 }
 
 .imagen2 {
     grid-area: imagen2;
     @extend .imagen;
-    
+
 }
 
 .imagen3 {
     grid-area: imagen3;
     @extend .imagen;
-    
+
 
 }
 
 .imagen4 {
     grid-area: imagen4;
     @extend .imagen;
-    
+
 }
 
 .imagen5 {
     grid-area: imagen5;
     @extend .imagen;
-    
+
 }
 
 .imagen6 {
     grid-area: imagen6;
     @extend .imagen;
-    
+
 }
 
 
-
-.body {
+.texto {
     display: grid;
-    height: 100vh;
-    grid-template-columns: 4fr 4fr 4fr;
-    grid-template-rows: 1fr 10fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 3em;
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
 
-    grid-template-areas:
-        "portada"
-        "coleccion"
-        "anillo1"
-        "aros2"
-        "collar3"
-        "shop";
+#propiedades {
 
+    display: grid;
     justify-content: center;
 
 }
 
-.body-index{
-    margin-right: 1rem;
-    margin-bottom: 2rem;
-    margin-top: 2rem;
+/*index*/
 
-}
-
-.portada {
-    grid-area: portada;
-    width: 100%;
-}
-
-.coleccion {
-    grid-area: coleccion;
-
-}
-
-.anillo1 {
-    grid-area: anillo1;
-    @extend .body-index;
-}
-
-.aros2 {
-    grid-area: aros2;
-    @extend .body-index;
-}
-
-.collar3 {
-    grid-area: collar3;
-    @extend .body-index;
-}
-
-.shop {
-    grid-area: shop;
-    width: 100%;
-}
-
-.texto{
+.gridConteiner {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-column-gap: 3rem;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
+
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas:
+        "item1 item1 item1"
+        "item2 item2 item2"
+        "item3 item4 item5"
+        "item6 item6 item6";
+
+    justify-content: center;
+    
+
+
+
 }
 
+
+
+.item1 {
+    grid-area: item1;
+
+}
+
+.item2 {
+    grid-area: item2;
+
+
+}
+
+.item3 {
+    grid-area: item3;
+    
+
+
+
+
+}
+
+.item4 {
+    grid-area: item4;
+    
+
+
+
+
+}
+
+.item5 {
+    grid-area: item5;
+    
+
+
+
+
+}
+
+
+.item6 {
+    grid-area: item6;
+
+}
+
+.gridConteiner {
+
+    div {
+        display: block;
+
+        margin: 1em;
+    }
+}
+
+
+
+/*nosotros*/
+
+.gridNosotros {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas:
+        "carrusel carrusel"
+        "text1 text2";
+    justify-content: center;
+    margin: auto;
+    margin-top: 2rem;
+}
+
+.carrusel {
+
+    grid-area: carrusel;
+    width: 60%;
+    margin: auto;
+
+}
+
+
+.text1 {
+    grid-area: text1;
+    margin: 2em;
+    text-align: center;
+
+}
+
+
+.text2 {
+    grid-area: text2;
+    margin: 2em;
+    text-align: center;
+}
