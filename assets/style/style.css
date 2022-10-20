@@ -36,7 +36,8 @@
 
 #propiedades {
   display: grid;
-  justify-content: center; }
+  justify-content: center;
+  justify-items: center; }
 
 /*index*/
 .gridConteiner {
@@ -75,7 +76,8 @@
   grid-template-rows: repeat(2, auto);
   grid-template-areas: "carrusel carrusel" "text1 text2";
   justify-content: center;
-  margin: auto; }
+  margin: auto;
+  margin-top: 2rem; }
 
 .carrusel {
   grid-area: carrusel;
@@ -111,7 +113,11 @@
   .gridConteiner {
     grid-template-rows: repeat(6, auto);
     grid-template-columns: 1fr;
-    grid-template-areas: "item1 " "item2 " "item3 " "item4 " "item5 " "item6 "; } }
+    grid-template-areas: "item1 " "item2 " "item3 " "item4 " "item5 " "item6 "; }
+    .gridConteiner div {
+      display: grid;
+      margin: 1em;
+      justify-items: center; } }
 
 @media screen and (max-width: 1200px) {
   body {

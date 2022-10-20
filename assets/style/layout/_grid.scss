@@ -75,10 +75,12 @@
 
     display: grid;
     justify-content: center;
+    justify-items: center;
 
 }
 
 /*index*/
+
 
 .gridConteiner {
     display: grid;
@@ -150,6 +152,8 @@
         display: block;
 
         margin: 1em;
+
+        
     }
 }
 

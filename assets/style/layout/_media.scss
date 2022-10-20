@@ -61,8 +61,11 @@
             "item5 "
             "item6 ";
          
-           
-            
+            div {
+                display: grid;
+                margin: 1em;
+                justify-items: center;
+            }
     }
 
 
